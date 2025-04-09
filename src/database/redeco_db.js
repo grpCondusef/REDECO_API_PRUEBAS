@@ -10,9 +10,9 @@ const getConnection = async () => {
             // Intentar establecer la conexión
             connection = await oracledb.getConnection({
                 // DATOS DE DESARROLLO
-                //user: 'REDECO',
-                //password: '0neOne$1',
-                //connectString: '10.33.200.184/SIAL'
+                user: 'REDECO',
+                password: '0neOne$1',
+                connectString: '10.33.200.184/SIAL'
 
                 // DATOS DE SIOTEST
                 //user: 'REDECO',
@@ -20,9 +20,9 @@ const getConnection = async () => {
                 //connectString: 'scan-cluster.condusef.gob.mx/siotest'
 
                 // DATOS DE PRODUCCIÓN
-                user: 'REDECO',
-                password: 'r3D3c0_$1014#',
-                connectString: 'scan-cluster.condusef.gob.mx/SIA'
+                //user: 'REDECO',
+                //password: 'r3D3c0_$1014#',
+                //connectString: 'scan-cluster.condusef.gob.mx/SIA'
             });
 
             // Si la conexión es exitosa, romper el bucle
